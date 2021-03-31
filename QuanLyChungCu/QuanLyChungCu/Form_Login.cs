@@ -16,5 +16,11 @@ namespace QuanLyChungCu
         {
             InitializeComponent();
         }
+
+        private void btn_thoat_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
     }
 }
