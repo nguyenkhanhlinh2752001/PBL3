@@ -108,3 +108,11 @@ create table hopdong
 )
 go
 
+create table chitietcanho
+(
+	macanho int foreign key (macanho) references canho(macanho),
+	vatdung nvarchar(100) not null,
+	soluong int not null,
+	dongia float not null
+)
+go

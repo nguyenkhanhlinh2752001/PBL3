@@ -63,29 +63,9 @@ namespace QuanLyChungCu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap du_an_phu_dong_sky_garden_1 {
+        internal static System.Drawing.Bitmap Sky {
             get {
-                object obj = ResourceManager.GetObject("du-an-phu-dong-sky-garden-1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap pngtree_blue_violet_gradient_night_sky_starry_sky_image_120576 {
-            get {
-                object obj = ResourceManager.GetObject("pngtree-blue-violet-gradient-night-sky-starry-sky-image_120576", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap unnamed {
-            get {
-                object obj = ResourceManager.GetObject("unnamed", resourceCulture);
+                object obj = ResourceManager.GetObject("Sky", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

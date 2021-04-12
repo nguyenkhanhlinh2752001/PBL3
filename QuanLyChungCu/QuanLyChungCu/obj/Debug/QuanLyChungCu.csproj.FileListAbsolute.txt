@@ -8,3 +8,14 @@ E:\My Work\Nam 2\Học kì 4\PBL3\QuanLyChungCu\QuanLyChungCu\bin\Debug\QuanLyCh
 E:\My Work\Nam 2\Học kì 4\PBL3\QuanLyChungCu\QuanLyChungCu\bin\Debug\QuanLyChungCu.pdb
 E:\My Work\Nam 2\Học kì 4\PBL3\QuanLyChungCu\QuanLyChungCu\obj\Debug\QuanLyChungCu.exe
 E:\My Work\Nam 2\Học kì 4\PBL3\QuanLyChungCu\QuanLyChungCu\obj\Debug\QuanLyChungCu.pdb
+E:\My Work\Nam 2\Hoc ki 4\PBL3\QuanLyChungCu\QuanLyChungCu\bin\Debug\QuanLyChungCu.exe.config
+E:\My Work\Nam 2\Hoc ki 4\PBL3\QuanLyChungCu\QuanLyChungCu\bin\Debug\QuanLyChungCu.exe
+E:\My Work\Nam 2\Hoc ki 4\PBL3\QuanLyChungCu\QuanLyChungCu\bin\Debug\QuanLyChungCu.pdb
+E:\My Work\Nam 2\Hoc ki 4\PBL3\QuanLyChungCu\QuanLyChungCu\obj\Debug\QuanLyChungCu.csprojAssemblyReference.cache
+E:\My Work\Nam 2\Hoc ki 4\PBL3\QuanLyChungCu\QuanLyChungCu\obj\Debug\QuanLyChungCu.Form_Login.resources
+E:\My Work\Nam 2\Hoc ki 4\PBL3\QuanLyChungCu\QuanLyChungCu\obj\Debug\QuanLyChungCu.Properties.Resources.resources
+E:\My Work\Nam 2\Hoc ki 4\PBL3\QuanLyChungCu\QuanLyChungCu\obj\Debug\QuanLyChungCu.csproj.GenerateResource.cache
+E:\My Work\Nam 2\Hoc ki 4\PBL3\QuanLyChungCu\QuanLyChungCu\obj\Debug\QuanLyChungCu.csproj.CoreCompileInputs.cache
+E:\My Work\Nam 2\Hoc ki 4\PBL3\QuanLyChungCu\QuanLyChungCu\obj\Debug\QuanLyChungCu.exe
+E:\My Work\Nam 2\Hoc ki 4\PBL3\QuanLyChungCu\QuanLyChungCu\obj\Debug\QuanLyChungCu.pdb
+E:\My Work\Nam 2\Hoc ki 4\PBL3\QuanLyChungCu\QuanLyChungCu\obj\Debug\QuanLyChungCu.View.Form_QuanLy.resources

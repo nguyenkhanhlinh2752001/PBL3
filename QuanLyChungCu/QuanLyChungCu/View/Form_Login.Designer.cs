@@ -31,13 +31,13 @@
             this.btn_thoat = new System.Windows.Forms.Button();
             this.txt_username = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lb_username = new System.Windows.Forms.Label();
             this.lb_password = new System.Windows.Forms.Label();
             this.txt_password = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.checkbox_remember = new System.Windows.Forms.CheckBox();
             this.btn_login = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,19 +74,6 @@
             this.panel1.Size = new System.Drawing.Size(381, 1);
             this.panel1.TabIndex = 2;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox1.Image = global::QuanLyChungCu.Properties.Resources.pngtree_blue_violet_gradient_night_sky_starry_sky_image_120576;
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(497, 286);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
             // lb_username
             // 
             this.lb_username.AutoSize = true;
@@ -119,6 +106,7 @@
             this.txt_password.Name = "txt_password";
             this.txt_password.Size = new System.Drawing.Size(381, 26);
             this.txt_password.TabIndex = 6;
+            this.txt_password.UseSystemPasswordChar = true;
             // 
             // panel2
             // 
@@ -155,6 +143,19 @@
             this.btn_login.Text = "Đăng Nhập";
             this.btn_login.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Image = global::QuanLyChungCu.Properties.Resources.Sky;
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(497, 286);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -186,12 +187,12 @@
         private System.Windows.Forms.Button btn_thoat;
         private System.Windows.Forms.TextBox txt_username;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lb_username;
         private System.Windows.Forms.Label lb_password;
         private System.Windows.Forms.TextBox txt_password;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.CheckBox checkbox_remember;
         private System.Windows.Forms.Button btn_login;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
