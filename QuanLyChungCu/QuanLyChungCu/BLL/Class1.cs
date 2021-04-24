@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace QuanLyChungCu.BLL
 {
-    class ABC
+    class Class1
     {
-        int a { get; set; }
     }
 }
