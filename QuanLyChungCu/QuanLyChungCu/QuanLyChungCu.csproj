@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\Class2.cs" />
     <Compile Include="View\Form_Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,7 +91,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BLL\" />
     <Folder Include="DAL\" />
     <Folder Include="DTO\" />
   </ItemGroup>
