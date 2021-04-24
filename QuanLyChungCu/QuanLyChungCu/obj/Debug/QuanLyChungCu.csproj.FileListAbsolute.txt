@@ -19,3 +19,14 @@ E:\My Work\Nam 2\Hoc ki 4\PBL3\QuanLyChungCu\QuanLyChungCu\obj\Debug\QuanLyChung
 E:\My Work\Nam 2\Hoc ki 4\PBL3\QuanLyChungCu\QuanLyChungCu\obj\Debug\QuanLyChungCu.exe
 E:\My Work\Nam 2\Hoc ki 4\PBL3\QuanLyChungCu\QuanLyChungCu\obj\Debug\QuanLyChungCu.pdb
 E:\My Work\Nam 2\Hoc ki 4\PBL3\QuanLyChungCu\QuanLyChungCu\obj\Debug\QuanLyChungCu.View.Form_QuanLy.resources
+C:\Users\gh\Desktop\PBL3\PBL3\QuanLyChungCu\QuanLyChungCu\bin\Debug\QuanLyChungCu.exe.config
+C:\Users\gh\Desktop\PBL3\PBL3\QuanLyChungCu\QuanLyChungCu\bin\Debug\QuanLyChungCu.exe
+C:\Users\gh\Desktop\PBL3\PBL3\QuanLyChungCu\QuanLyChungCu\bin\Debug\QuanLyChungCu.pdb
+C:\Users\gh\Desktop\PBL3\PBL3\QuanLyChungCu\QuanLyChungCu\obj\Debug\QuanLyChungCu.csprojAssemblyReference.cache
+C:\Users\gh\Desktop\PBL3\PBL3\QuanLyChungCu\QuanLyChungCu\obj\Debug\QuanLyChungCu.Form_Login.resources
+C:\Users\gh\Desktop\PBL3\PBL3\QuanLyChungCu\QuanLyChungCu\obj\Debug\QuanLyChungCu.Properties.Resources.resources
+C:\Users\gh\Desktop\PBL3\PBL3\QuanLyChungCu\QuanLyChungCu\obj\Debug\QuanLyChungCu.View.Form_QuanLy.resources
+C:\Users\gh\Desktop\PBL3\PBL3\QuanLyChungCu\QuanLyChungCu\obj\Debug\QuanLyChungCu.csproj.GenerateResource.cache
+C:\Users\gh\Desktop\PBL3\PBL3\QuanLyChungCu\QuanLyChungCu\obj\Debug\QuanLyChungCu.csproj.CoreCompileInputs.cache
+C:\Users\gh\Desktop\PBL3\PBL3\QuanLyChungCu\QuanLyChungCu\obj\Debug\QuanLyChungCu.exe
+C:\Users\gh\Desktop\PBL3\PBL3\QuanLyChungCu\QuanLyChungCu\obj\Debug\QuanLyChungCu.pdb
