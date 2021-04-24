@@ -48,7 +48,9 @@
   <ItemGroup>
     <Compile Include="BLL\Class2.cs" />
     <Compile Include="DAL\Class1.cs" />
+    <Compile Include="DAL\Class2.cs" />
     <Compile Include="DTO\Class1.cs" />
+    <Compile Include="DTO\Class2.cs" />
     <Compile Include="View\Form_Login.cs">
       <SubType>Form</SubType>
     </Compile>
