@@ -52,6 +52,7 @@
     <Compile Include="DTO\Class1.cs" />
     <Compile Include="DTO\Class2.cs" />
     <Compile Include="DTO\Class3.cs" />
+    <Compile Include="DTO\Class4.cs" />
     <Compile Include="View\Form_Login.cs">
       <SubType>Form</SubType>
     </Compile>
