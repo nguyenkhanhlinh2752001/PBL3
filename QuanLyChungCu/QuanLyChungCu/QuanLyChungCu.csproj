@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\Class2.cs" />
+    <Compile Include="BLL\Class3.cs" />
     <Compile Include="DAL\Class1.cs" />
     <Compile Include="DAL\Class2.cs" />
     <Compile Include="DAL\class3.cs" />
