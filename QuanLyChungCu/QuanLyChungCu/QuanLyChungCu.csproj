@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="BLL\Class2.cs" />
     <Compile Include="BLL\Class3.cs" />
+    <Compile Include="BLL\Class4.cs" />
     <Compile Include="View\Form_ChoThue.cs">
       <SubType>Form</SubType>
     </Compile>
