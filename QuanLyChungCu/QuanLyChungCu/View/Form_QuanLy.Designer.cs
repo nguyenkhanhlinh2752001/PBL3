@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.pnl_btnChucNang = new System.Windows.Forms.Panel();
+            this.btn_TienNuoc = new System.Windows.Forms.Button();
+            this.btn_TienDien = new System.Windows.Forms.Button();
             this.btn_ChoThue = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btn_menu = new System.Windows.Forms.Button();
@@ -45,7 +45,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.panel4.SuspendLayout();
+            this.pnl_btnChucNang.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -53,7 +53,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.pnl_btnChucNang);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -62,52 +62,58 @@
             this.panel1.Size = new System.Drawing.Size(66, 788);
             this.panel1.TabIndex = 0;
             // 
-            // panel4
+            // pnl_btnChucNang
             // 
-            this.panel4.BackColor = System.Drawing.Color.Plum;
-            this.panel4.Controls.Add(this.button5);
-            this.panel4.Controls.Add(this.button4);
-            this.panel4.Controls.Add(this.btn_ChoThue);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.panel4.Location = new System.Drawing.Point(0, 248);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(64, 540);
-            this.panel4.TabIndex = 8;
+            this.pnl_btnChucNang.BackColor = System.Drawing.Color.Plum;
+            this.pnl_btnChucNang.Controls.Add(this.btn_TienNuoc);
+            this.pnl_btnChucNang.Controls.Add(this.btn_TienDien);
+            this.pnl_btnChucNang.Controls.Add(this.btn_ChoThue);
+            this.pnl_btnChucNang.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_btnChucNang.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.pnl_btnChucNang.Location = new System.Drawing.Point(0, 248);
+            this.pnl_btnChucNang.Name = "pnl_btnChucNang";
+            this.pnl_btnChucNang.Size = new System.Drawing.Size(64, 540);
+            this.pnl_btnChucNang.TabIndex = 8;
             // 
-            // button5
+            // btn_TienNuoc
             // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Violet;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.Purple;
-            this.button5.Location = new System.Drawing.Point(0, 120);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(64, 60);
-            this.button5.TabIndex = 9;
-            this.button5.Text = "  3";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = true;
+            this.btn_TienNuoc.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_TienNuoc.FlatAppearance.BorderSize = 0;
+            this.btn_TienNuoc.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
+            this.btn_TienNuoc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Violet;
+            this.btn_TienNuoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_TienNuoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_TienNuoc.ForeColor = System.Drawing.Color.Purple;
+            this.btn_TienNuoc.Image = global::QuanLyChungCu.Properties.Resources.water_32;
+            this.btn_TienNuoc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_TienNuoc.Location = new System.Drawing.Point(0, 140);
+            this.btn_TienNuoc.Name = "btn_TienNuoc";
+            this.btn_TienNuoc.Size = new System.Drawing.Size(64, 70);
+            this.btn_TienNuoc.TabIndex = 9;
+            this.btn_TienNuoc.Text = "        Tiền nước";
+            this.btn_TienNuoc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_TienNuoc.UseVisualStyleBackColor = true;
+            this.btn_TienNuoc.Click += new System.EventHandler(this.btn_TienNuoc_Click);
             // 
-            // button4
+            // btn_TienDien
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Violet;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.Purple;
-            this.button4.Location = new System.Drawing.Point(0, 60);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(64, 60);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "  2";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn_TienDien.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_TienDien.FlatAppearance.BorderSize = 0;
+            this.btn_TienDien.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
+            this.btn_TienDien.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Violet;
+            this.btn_TienDien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_TienDien.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_TienDien.ForeColor = System.Drawing.Color.Purple;
+            this.btn_TienDien.Image = global::QuanLyChungCu.Properties.Resources.bolt_32;
+            this.btn_TienDien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_TienDien.Location = new System.Drawing.Point(0, 70);
+            this.btn_TienDien.Name = "btn_TienDien";
+            this.btn_TienDien.Size = new System.Drawing.Size(64, 70);
+            this.btn_TienDien.TabIndex = 8;
+            this.btn_TienDien.Text = "        Tiền điện";
+            this.btn_TienDien.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_TienDien.UseVisualStyleBackColor = true;
+            this.btn_TienDien.Click += new System.EventHandler(this.btn_TienDien_Click);
             // 
             // btn_ChoThue
             // 
@@ -118,12 +124,14 @@
             this.btn_ChoThue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ChoThue.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ChoThue.ForeColor = System.Drawing.Color.Purple;
+            this.btn_ChoThue.Image = global::QuanLyChungCu.Properties.Resources.money_bag_icon_13_32;
+            this.btn_ChoThue.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_ChoThue.Location = new System.Drawing.Point(0, 0);
             this.btn_ChoThue.Name = "btn_ChoThue";
-            this.btn_ChoThue.Size = new System.Drawing.Size(64, 60);
+            this.btn_ChoThue.Size = new System.Drawing.Size(64, 70);
             this.btn_ChoThue.TabIndex = 7;
-            this.btn_ChoThue.Text = "  1";
-            this.btn_ChoThue.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_ChoThue.Text = "        Thuê căn hộ";
+            this.btn_ChoThue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_ChoThue.UseVisualStyleBackColor = true;
             this.btn_ChoThue.Click += new System.EventHandler(this.btn_ChoThue_Click);
             // 
@@ -147,11 +155,11 @@
             this.btn_menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_menu.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_menu.ForeColor = System.Drawing.Color.Purple;
+            this.btn_menu.Image = global::QuanLyChungCu.Properties.Resources.List_Text_Menu_Numbers_String_Burger_icon_icons_com_67909__1_;
             this.btn_menu.Location = new System.Drawing.Point(3, 3);
             this.btn_menu.Name = "btn_menu";
-            this.btn_menu.Size = new System.Drawing.Size(60, 60);
+            this.btn_menu.Size = new System.Drawing.Size(60, 70);
             this.btn_menu.TabIndex = 5;
-            this.btn_menu.Text = "*";
             this.btn_menu.UseVisualStyleBackColor = true;
             this.btn_menu.Click += new System.EventHandler(this.btn_menu_Click);
             // 
@@ -163,12 +171,15 @@
             this.btn_help.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_help.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_help.ForeColor = System.Drawing.Color.Purple;
-            this.btn_help.Location = new System.Drawing.Point(3, 68);
+            this.btn_help.Image = global::QuanLyChungCu.Properties.Resources.help_32;
+            this.btn_help.Location = new System.Drawing.Point(3, 70);
             this.btn_help.Name = "btn_help";
-            this.btn_help.Size = new System.Drawing.Size(60, 60);
+            this.btn_help.Size = new System.Drawing.Size(60, 70);
             this.btn_help.TabIndex = 6;
-            this.btn_help.Text = "?";
+            this.btn_help.Text = "        Trợ giúp";
+            this.btn_help.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_help.UseVisualStyleBackColor = true;
+            this.btn_help.Click += new System.EventHandler(this.btn_help_Click);
             // 
             // label2
             // 
@@ -289,7 +300,7 @@
             this.Text = "Form_QuanLy";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
+            this.pnl_btnChucNang.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -306,13 +317,13 @@
         private System.Windows.Forms.Label lb_Tieude;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btn_TienNuoc;
+        private System.Windows.Forms.Button btn_TienDien;
         private System.Windows.Forms.Button btn_ChoThue;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btn_menu;
         private System.Windows.Forms.Button btn_help;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel pnl_btnChucNang;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel5;
     }
