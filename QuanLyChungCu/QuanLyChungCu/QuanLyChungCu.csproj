@@ -48,13 +48,6 @@
   <ItemGroup>
     <Compile Include="BLL\Class2.cs" />
     <Compile Include="BLL\Class3.cs" />
-    <Compile Include="DAL\Class1.cs" />
-    <Compile Include="DAL\Class2.cs" />
-    <Compile Include="DAL\class3.cs" />
-    <Compile Include="DTO\Class1.cs" />
-    <Compile Include="DTO\Class2.cs" />
-    <Compile Include="DTO\Class3.cs" />
-    <Compile Include="DTO\Class4.cs" />
     <Compile Include="View\Form_ChoThue.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +65,18 @@
     </Compile>
     <Compile Include="View\Form_QuanLy.Designer.cs">
       <DependentUpon>Form_QuanLy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Form_TienDien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form_TienDien.Designer.cs">
+      <DependentUpon>Form_TienDien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Form_TienNuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form_TienNuoc.Designer.cs">
+      <DependentUpon>Form_TienNuoc.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
