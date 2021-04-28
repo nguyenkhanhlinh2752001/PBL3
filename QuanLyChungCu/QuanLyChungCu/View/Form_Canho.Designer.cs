@@ -1,7 +1,7 @@
 ﻿
 namespace QuanLyChungCu.View
 {
-    partial class Form_ChoThue
+    partial class Form_Canho
     {
         /// <summary>
         /// Required designer variable.
@@ -51,7 +51,7 @@ namespace QuanLyChungCu.View
             this.label2.Size = new System.Drawing.Size(798, 2);
             this.label2.TabIndex = 1;
             // 
-            // Form_ChoThue
+            // Form_TienDien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -59,8 +59,8 @@ namespace QuanLyChungCu.View
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form_ChoThue";
-            this.Text = "Form_ChoThue";
+            this.Name = "Form_TienDien";
+            this.Text = "Form_TienDien";
             this.ResumeLayout(false);
 
         }

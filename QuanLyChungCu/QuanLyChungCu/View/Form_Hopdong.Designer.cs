@@ -1,7 +1,7 @@
 ﻿
 namespace QuanLyChungCu.View
 {
-    partial class Form_TienNuoc
+    partial class Form_Hopdong
     {
         /// <summary>
         /// Required designer variable.

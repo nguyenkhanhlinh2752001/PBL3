@@ -49,6 +49,17 @@
     <Compile Include="BLL\Class2.cs" />
     <Compile Include="BLL\Class3.cs" />
     <Compile Include="BLL\Class4.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Form_Canho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form_Canho.Designer.cs">
+      <DependentUpon>Form_Canho.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Form_ChoThue.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,23 +72,35 @@
     <Compile Include="View\Form_Login.Designer.cs">
       <DependentUpon>Form_Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Form_Nhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form_Nhanvien.Designer.cs">
+      <DependentUpon>Form_Nhanvien.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Form_QuanLy.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\Form_QuanLy.Designer.cs">
       <DependentUpon>Form_QuanLy.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Form_TienDien.cs">
+    <Compile Include="View\Form_Dichvu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Form_TienDien.Designer.cs">
-      <DependentUpon>Form_TienDien.cs</DependentUpon>
+    <Compile Include="View\Form_Dichvu.Designer.cs">
+      <DependentUpon>Form_Dichvu.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Form_TienNuoc.cs">
+    <Compile Include="View\Form_Hopdong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Form_TienNuoc.Designer.cs">
-      <DependentUpon>Form_TienNuoc.cs</DependentUpon>
+    <Compile Include="View\Form_Hopdong.Designer.cs">
+      <DependentUpon>Form_Hopdong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Form_Thongtin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form_Thongtin.Designer.cs">
+      <DependentUpon>Form_Thongtin.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -95,21 +118,16 @@
     <EmbeddedResource Include="View\Form_QuanLy.resx">
       <DependentUpon>Form_QuanLy.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Form_TienDien.resx">
-      <DependentUpon>Form_TienDien.cs</DependentUpon>
+    <EmbeddedResource Include="View\Form_Dichvu.resx">
+      <DependentUpon>Form_Dichvu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Form_TienNuoc.resx">
-      <DependentUpon>Form_TienNuoc.cs</DependentUpon>
+    <EmbeddedResource Include="View\Form_Hopdong.resx">
+      <DependentUpon>Form_Hopdong.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -123,19 +141,28 @@
     <None Include="Resources\Sky.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\List_Text_Menu_Numbers_String_Burger_icon-icons.com_67909 %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\money-bag-icon-13-32.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\help-32.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\bolt-32.png" />
+    <None Include="Resources\bjphibibpjz %281%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\water-32.png" />
+    <None Include="Resources\employee-identification-card1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\department.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-house.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

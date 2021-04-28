@@ -82,45 +82,90 @@ namespace QuanLyChungCu.View
             }
             else ActiveChildForm("Form_ChoThue");
         }
-        private void btn_TienDien_Click(object sender, EventArgs e)
+        private void btn_Dichvu_Click(object sender, EventArgs e)
         {
             SetbtnColor(sender as Button);
-            if (!CheckExistForm("Form_TienDien"))
+            if (!CheckExistForm("Form_Dichvu"))
             {
-                Form_TienDien f = new Form_TienDien();
+                Form_Dichvu f = new Form_Dichvu();
                 f.MdiParent = this;
                 f.StartPosition = FormStartPosition.Manual;
                 f.Width = 1156;
                 f.Height = 802;
                 f.Show();
             }
-            else ActiveChildForm("Form_TienDien");
+            else ActiveChildForm("Form_Dichvu");
         }
 
-        private void btn_TienNuoc_Click(object sender, EventArgs e)
+        private void btn_Hopdong_Click(object sender, EventArgs e)
         {
             SetbtnColor(sender as Button);
-            if (!CheckExistForm("Form_TienNuoc"))
+            if (!CheckExistForm("Form_Hopdong"))
             {
-                Form_TienNuoc f = new Form_TienNuoc();
+                Form_Hopdong f = new Form_Hopdong();
                 f.MdiParent = this;
                 f.StartPosition = FormStartPosition.Manual;
                 f.Width = 1156;
                 f.Height = 802;
                 f.Show();
             }
-            else ActiveChildForm("Form_TienNuoc");
+            else ActiveChildForm("Form_Hopdong");
         }
 
         private void btn_help_Click(object sender, EventArgs e)
         {
             SetbtnColor(sender as Button);
         }
+        private void btn_Nhanvien_Click(object sender, EventArgs e)
+        {
+            SetbtnColor(sender as Button);
+            if (!CheckExistForm("Form_Nhanvien"))
+            {
+                Form_Hopdong f = new Form_Hopdong();
+                f.MdiParent = this;
+                f.StartPosition = FormStartPosition.Manual;
+                f.Width = 1156;
+                f.Height = 802;
+                f.Show();
+            }
+            else ActiveChildForm("Form_Nhanvien");
+        }
 
+        private void btn_Canho_Click(object sender, EventArgs e)
+        {
+            SetbtnColor(sender as Button);
+            if (!CheckExistForm("Form_Canho"))
+            {
+                Form_Hopdong f = new Form_Hopdong();
+                f.MdiParent = this;
+                f.StartPosition = FormStartPosition.Manual;
+                f.Width = 1156;
+                f.Height = 802;
+                f.Show();
+            }
+            else ActiveChildForm("Form_Canho");
+        }
+
+        private void btn_Thongtin_Click(object sender, EventArgs e)
+        {
+            SetbtnColor(sender as Button);
+            if (!CheckExistForm("Form_Thongtin"))
+            {
+                Form_Hopdong f = new Form_Hopdong();
+                f.MdiParent = this;
+                f.StartPosition = FormStartPosition.Manual;
+                f.Width = 1156;
+                f.Height = 802;
+                f.Show();
+            }
+            else ActiveChildForm("Form_Thongtin");
+        }
 
 
 
 
         #endregion
+
+
     }
 }

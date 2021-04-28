@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyChungCu.View
 {
-    public partial class Form_TienNuoc : Form
+    public partial class Form_Canho : Form
     {
-        public Form_TienNuoc()
+        public Form_Canho()
         {
             InitializeComponent();
         }
