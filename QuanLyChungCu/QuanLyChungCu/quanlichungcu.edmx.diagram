@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="faba275e52cb458eaa834ec9e1a5942e" Name="Diagram1">
+        <EntityTypeShape EntityType="qlchungcuModel.canho" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="qlchungcuModel.chucvu" Width="1.5" PointX="0.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="qlchungcuModel.dichvu" Width="1.5" PointX="8.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="qlchungcuModel.hoadondichvu" Width="1.5" PointX="8.125" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="qlchungcuModel.hogiadinh" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="qlchungcuModel.hopdong" Width="1.5" PointX="5.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="qlchungcuModel.khu" Width="1.5" PointX="0.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="qlchungcuModel.nhanvien" Width="1.5" PointX="3" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="qlchungcuModel.taikhoan" Width="1.5" PointX="5.25" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="qlchungcuModel.chitietcanho" Width="1.5" PointX="5.25" PointY="12.625" IsExpanded="true" />
+        <AssociationConnector Association="qlchungcuModel.FK__canho__maho__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="qlchungcuModel.FK__canho__makhu__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="qlchungcuModel.FK__chitietca__macan__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="qlchungcuModel.FK__hoadondic__macan__68487DD7" ManuallyRouted="false" />
+        <AssociationConnector Association="qlchungcuModel.FK__hopdong__macanho__52593CB8" ManuallyRouted="false" />
+        <AssociationConnector Association="qlchungcuModel.FK__nhanvien__machuc__5535A963" ManuallyRouted="false" />
+        <AssociationConnector Association="qlchungcuModel.FK__hoadondic__manha__693CA210" ManuallyRouted="false" />
+        <AssociationConnector Association="qlchungcuModel.FK__hopdong__maho__534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="qlchungcuModel.FK__hopdong__manhanv__5441852A" ManuallyRouted="false" />
+        <AssociationConnector Association="qlchungcuModel.FK__taikhoan__manhan__5629CD9C" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="qlchungcuModel.sysdiagram" Width="1.5" PointX="3.375" PointY="0.75" />
+        <EntityTypeShape EntityType="qlchungcuModel.chitiethoadon" Width="1.5" PointX="10.5" PointY="3.375" />
+        <AssociationConnector Association="qlchungcuModel.FK__chitietho__madic__07C12930" />
+        <AssociationConnector Association="qlchungcuModel.FK__chitietho__mahoa__06CD04F7" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

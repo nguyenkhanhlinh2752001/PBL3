@@ -121,7 +121,7 @@ namespace QuanLyChungCu.View
             SetbtnColor(sender as Button);
             if (!CheckExistForm("Form_Nhanvien"))
             {
-                Form_Nhanvien f = new Form_Nhanvien();
+                Form_Hopdong f = new Form_Hopdong();
                 f.MdiParent = this;
                 f.StartPosition = FormStartPosition.Manual;
                 f.Width = 1156;
@@ -136,7 +136,7 @@ namespace QuanLyChungCu.View
             SetbtnColor(sender as Button);
             if (!CheckExistForm("Form_Canho"))
             {
-                Form_Canho f = new Form_Canho();
+                Form_Hopdong f = new Form_Hopdong();
                 f.MdiParent = this;
                 f.StartPosition = FormStartPosition.Manual;
                 f.Width = 1156;
@@ -151,7 +151,7 @@ namespace QuanLyChungCu.View
             SetbtnColor(sender as Button);
             if (!CheckExistForm("Form_Thongtin"))
             {
-                Form_Thongtin f = new Form_Thongtin();
+                Form_Hopdong f = new Form_Hopdong();
                 f.MdiParent = this;
                 f.StartPosition = FormStartPosition.Manual;
                 f.Width = 1156;
@@ -164,8 +164,9 @@ namespace QuanLyChungCu.View
 
 
 
+
         #endregion
 
-
+        
     }
 }
