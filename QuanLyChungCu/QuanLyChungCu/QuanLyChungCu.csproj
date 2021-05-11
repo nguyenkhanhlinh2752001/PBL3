@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>preview</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,10 +32,20 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>preview</LangVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,9 +57,79 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BLL\Class2.cs" />
-    <Compile Include="BLL\Class3.cs" />
-    <Compile Include="BLL\Class4.cs" />
+    <Compile Include="BLL\BLL_canho.cs" />
+    <Compile Include="BLL\BLL_HD.cs" />
+    <Compile Include="BLL\BLL_Hogiadinh.cs" />
+    <Compile Include="BLL\BLL_NV.cs" />
+    <Compile Include="DAL\canho.cs">
+      <DependentUpon>qlchungcu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CBBItem.cs" />
+    <Compile Include="DAL\chitietcanho.cs">
+      <DependentUpon>qlchungcu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\chitiethoadon.cs">
+      <DependentUpon>qlchungcu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\chucvu.cs">
+      <DependentUpon>qlchungcu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\dichvu.cs">
+      <DependentUpon>qlchungcu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\hoadondichvu.cs">
+      <DependentUpon>qlchungcu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\hogiadinh.cs">
+      <DependentUpon>qlchungcu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\hopdong.cs">
+      <DependentUpon>qlchungcu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\khu.cs">
+      <DependentUpon>qlchungcu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\nhanvien.cs">
+      <DependentUpon>qlchungcu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\qlchungcu.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>qlchungcu.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\qlchungcu.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>qlchungcu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\qlchungcu.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>qlchungcu.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\sysdiagram.cs">
+      <DependentUpon>qlchungcu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\taikhoan.cs">
+      <DependentUpon>qlchungcu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View\DetailDH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DetailDH.Designer.cs">
+      <DependentUpon>DetailDH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Form_Canho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form_Canho.Designer.cs">
+      <DependentUpon>Form_Canho.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Form_ChoThue.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,26 +142,41 @@
     <Compile Include="View\Form_Login.Designer.cs">
       <DependentUpon>Form_Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Form_Nhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form_Nhanvien.Designer.cs">
+      <DependentUpon>Form_Nhanvien.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Form_QuanLy.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\Form_QuanLy.Designer.cs">
       <DependentUpon>Form_QuanLy.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Form_TienDien.cs">
+    <Compile Include="View\Form_Dichvu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Form_TienDien.Designer.cs">
-      <DependentUpon>Form_TienDien.cs</DependentUpon>
+    <Compile Include="View\Form_Dichvu.Designer.cs">
+      <DependentUpon>Form_Dichvu.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Form_TienNuoc.cs">
+    <Compile Include="View\Form_Hopdong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Form_TienNuoc.Designer.cs">
-      <DependentUpon>Form_TienNuoc.cs</DependentUpon>
+    <Compile Include="View\Form_Hopdong.Designer.cs">
+      <DependentUpon>Form_Hopdong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Form_Thongtin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form_Thongtin.Designer.cs">
+      <DependentUpon>Form_Thongtin.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="View\DetailDH.resx">
+      <DependentUpon>DetailDH.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Form_ChoThue.resx">
       <DependentUpon>Form_ChoThue.cs</DependentUpon>
     </EmbeddedResource>
@@ -95,21 +191,17 @@
     <EmbeddedResource Include="View\Form_QuanLy.resx">
       <DependentUpon>Form_QuanLy.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Form_TienDien.resx">
-      <DependentUpon>Form_TienDien.cs</DependentUpon>
+    <EmbeddedResource Include="View\Form_Dichvu.resx">
+      <DependentUpon>Form_Dichvu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Form_TienNuoc.resx">
-      <DependentUpon>Form_TienNuoc.cs</DependentUpon>
+    <EmbeddedResource Include="View\Form_Hopdong.resx">
+      <DependentUpon>Form_Hopdong.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -120,22 +212,54 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <EntityDeploy Include="DAL\qlchungcu.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>qlchungcu.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DAL\qlchungcu.edmx.diagram">
+      <DependentUpon>qlchungcu.edmx</DependentUpon>
+    </None>
     <None Include="Resources\Sky.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\List_Text_Menu_Numbers_String_Burger_icon-icons.com_67909 %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\money-bag-icon-13-32.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\help-32.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\bolt-32.png" />
+    <None Include="Resources\bjphibibpjz %281%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\water-32.png" />
+    <None Include="Resources\employee-identification-card1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\department.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-house.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="DAL\qlchungcu.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>qlchungcu.edmx</DependentUpon>
+      <LastGenOutput>qlchungcu.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DAL\qlchungcu.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>qlchungcu.edmx</DependentUpon>
+      <LastGenOutput>qlchungcu.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="masterModelStoreContainer" CdmEntityContainer="masterEntities">
+    <EntitySetMapping Name="canhoes">
+      <EntityTypeMapping TypeName="masterModel.canho">
+        <MappingFragment StoreEntitySet="canho">
+          <ScalarProperty Name="macanho" ColumnName="macanho" />
+          <ScalarProperty Name="makhu" ColumnName="makhu" />
+          <ScalarProperty Name="maho" ColumnName="maho" />
+          <ScalarProperty Name="loaicanho" ColumnName="loaicanho" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="chucvus">
+      <EntityTypeMapping TypeName="masterModel.chucvu">
+        <MappingFragment StoreEntitySet="chucvu">
+          <ScalarProperty Name="machucvu" ColumnName="machucvu" />
+          <ScalarProperty Name="tenchucvu" ColumnName="tenchucvu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dichvus">
+      <EntityTypeMapping TypeName="masterModel.dichvu">
+        <MappingFragment StoreEntitySet="dichvu">
+          <ScalarProperty Name="madichvu" ColumnName="madichvu" />
+          <ScalarProperty Name="tendichvu" ColumnName="tendichvu" />
+          <ScalarProperty Name="gia" ColumnName="gia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hoadondichvus">
+      <EntityTypeMapping TypeName="masterModel.hoadondichvu">
+        <MappingFragment StoreEntitySet="hoadondichvu">
+          <ScalarProperty Name="mahoadon" ColumnName="mahoadon" />
+          <ScalarProperty Name="macanho" ColumnName="macanho" />
+          <ScalarProperty Name="manhanvien" ColumnName="manhanvien" />
+          <ScalarProperty Name="tongtien" ColumnName="tongtien" />
+          <ScalarProperty Name="dathanhtoan" ColumnName="dathanhtoan" />
+          <ScalarProperty Name="ngaythanhtoan" ColumnName="ngaythanhtoan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hogiadinhs">
+      <EntityTypeMapping TypeName="masterModel.hogiadinh">
+        <MappingFragment StoreEntitySet="hogiadinh">
+          <ScalarProperty Name="maho" ColumnName="maho" />
+          <ScalarProperty Name="tenchuho" ColumnName="tenchuho" />
+          <ScalarProperty Name="sothanhvien" ColumnName="sothanhvien" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hopdongs">
+      <EntityTypeMapping TypeName="masterModel.hopdong">
+        <MappingFragment StoreEntitySet="hopdong">
+          <ScalarProperty Name="mahopdong" ColumnName="mahopdong" />
+          <ScalarProperty Name="manhanvien" ColumnName="manhanvien" />
+          <ScalarProperty Name="macanho" ColumnName="macanho" />
+          <ScalarProperty Name="maho" ColumnName="maho" />
+          <ScalarProperty Name="tenhopdong" ColumnName="tenhopdong" />
+          <ScalarProperty Name="giatien" ColumnName="giatien" />
+          <ScalarProperty Name="thoihan" ColumnName="thoihan" />
+          <ScalarProperty Name="ngayki" ColumnName="ngayki" />
+          <ScalarProperty Name="dahuy" ColumnName="dahuy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="khus">
+      <EntityTypeMapping TypeName="masterModel.khu">
+        <MappingFragment StoreEntitySet="khu">
+          <ScalarProperty Name="makhu" ColumnName="makhu" />
+          <ScalarProperty Name="tenkhu" ColumnName="tenkhu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="nhanviens">
+      <EntityTypeMapping TypeName="masterModel.nhanvien">
+        <MappingFragment StoreEntitySet="nhanvien">
+          <ScalarProperty Name="manhanvien" ColumnName="manhanvien" />
+          <ScalarProperty Name="machucvu" ColumnName="machucvu" />
+          <ScalarProperty Name="tennhanvien" ColumnName="tennhanvien" />
+          <ScalarProperty Name="gioitinh" ColumnName="gioitinh" />
+          <ScalarProperty Name="cmnd" ColumnName="cmnd" />
+          <ScalarProperty Name="sdt" ColumnName="sdt" />
+          <ScalarProperty Name="ngaysinh" ColumnName="ngaysinh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="taikhoans">
+      <EntityTypeMapping TypeName="masterModel.taikhoan">
+        <MappingFragment StoreEntitySet="taikhoan">
+          <ScalarProperty Name="tendangnhap" ColumnName="tendangnhap" />
+          <ScalarProperty Name="manhanvien" ColumnName="manhanvien" />
+          <ScalarProperty Name="matkhau" ColumnName="matkhau" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="chitietcanhoes">
+      <EntityTypeMapping TypeName="masterModel.chitietcanho">
+        <MappingFragment StoreEntitySet="chitietcanho">
+          <ScalarProperty Name="macanho" ColumnName="macanho" />
+          <ScalarProperty Name="vatdung" ColumnName="vatdung" />
+          <ScalarProperty Name="soluong" ColumnName="soluong" />
+          <ScalarProperty Name="dongia" ColumnName="dongia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="chitiethoadons">
+      <EntityTypeMapping TypeName="masterModel.chitiethoadon">
+        <MappingFragment StoreEntitySet="chitiethoadon">
+          <ScalarProperty Name="mahoadon" ColumnName="mahoadon" />
+          <ScalarProperty Name="madichvu" ColumnName="madichvu" />
+          <ScalarProperty Name="soluong" ColumnName="soluong" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSreplication_options">
+      <EntityTypeMapping TypeName="masterModel.MSreplication_options">
+        <MappingFragment StoreEntitySet="MSreplication_options">
+          <ScalarProperty Name="optname" ColumnName="optname" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="major_version" ColumnName="major_version" />
+          <ScalarProperty Name="minor_version" ColumnName="minor_version" />
+          <ScalarProperty Name="revision" ColumnName="revision" />
+          <ScalarProperty Name="install_failures" ColumnName="install_failures" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="spt_fallback_db">
+      <EntityTypeMapping TypeName="masterModel.spt_fallback_db">
+        <MappingFragment StoreEntitySet="spt_fallback_db">
+          <ScalarProperty Name="xserver_name" ColumnName="xserver_name" />
+          <ScalarProperty Name="xdttm_ins" ColumnName="xdttm_ins" />
+          <ScalarProperty Name="xdttm_last_ins_upd" ColumnName="xdttm_last_ins_upd" />
+          <ScalarProperty Name="xfallback_dbid" ColumnName="xfallback_dbid" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="dbid" ColumnName="dbid" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="version" ColumnName="version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="spt_fallback_dev">
+      <EntityTypeMapping TypeName="masterModel.spt_fallback_dev">
+        <MappingFragment StoreEntitySet="spt_fallback_dev">
+          <ScalarProperty Name="xserver_name" ColumnName="xserver_name" />
+          <ScalarProperty Name="xdttm_ins" ColumnName="xdttm_ins" />
+          <ScalarProperty Name="xdttm_last_ins_upd" ColumnName="xdttm_last_ins_upd" />
+          <ScalarProperty Name="xfallback_low" ColumnName="xfallback_low" />
+          <ScalarProperty Name="xfallback_drive" ColumnName="xfallback_drive" />
+          <ScalarProperty Name="low" ColumnName="low" />
+          <ScalarProperty Name="high" ColumnName="high" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="phyname" ColumnName="phyname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="spt_fallback_usg">
+      <EntityTypeMapping TypeName="masterModel.spt_fallback_usg">
+        <MappingFragment StoreEntitySet="spt_fallback_usg">
+          <ScalarProperty Name="xserver_name" ColumnName="xserver_name" />
+          <ScalarProperty Name="xdttm_ins" ColumnName="xdttm_ins" />
+          <ScalarProperty Name="xdttm_last_ins_upd" ColumnName="xdttm_last_ins_upd" />
+          <ScalarProperty Name="xfallback_vstart" ColumnName="xfallback_vstart" />
+          <ScalarProperty Name="dbid" ColumnName="dbid" />
+          <ScalarProperty Name="segmap" ColumnName="segmap" />
+          <ScalarProperty Name="lstart" ColumnName="lstart" />
+          <ScalarProperty Name="sizepg" ColumnName="sizepg" />
+          <ScalarProperty Name="vstart" ColumnName="vstart" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="spt_monitor">
+      <EntityTypeMapping TypeName="masterModel.spt_monitor">
+        <MappingFragment StoreEntitySet="spt_monitor">
+          <ScalarProperty Name="lastrun" ColumnName="lastrun" />
+          <ScalarProperty Name="cpu_busy" ColumnName="cpu_busy" />
+          <ScalarProperty Name="io_busy" ColumnName="io_busy" />
+          <ScalarProperty Name="idle" ColumnName="idle" />
+          <ScalarProperty Name="pack_received" ColumnName="pack_received" />
+          <ScalarProperty Name="pack_sent" ColumnName="pack_sent" />
+          <ScalarProperty Name="connections" ColumnName="connections" />
+          <ScalarProperty Name="pack_errors" ColumnName="pack_errors" />
+          <ScalarProperty Name="total_read" ColumnName="total_read" />
+          <ScalarProperty Name="total_write" ColumnName="total_write" />
+          <ScalarProperty Name="total_errors" ColumnName="total_errors" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="spt_values">
+      <EntityTypeMapping TypeName="masterModel.spt_values">
+        <MappingFragment StoreEntitySet="spt_values">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="number" ColumnName="number" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="low" ColumnName="low" />
+          <ScalarProperty Name="high" ColumnName="high" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_MScleanupmergepublisher" FunctionName="masterModel.Store.sp_MScleanupmergepublisher" />
+    <FunctionImportMapping FunctionImportName="sp_MSrepl_startup" FunctionName="masterModel.Store.sp_MSrepl_startup" />
+  </EntityContainerMapping>
+</Mapping>
