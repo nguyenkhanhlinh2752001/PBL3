@@ -33,6 +33,12 @@ namespace QuanLyChungCu.View
             this.btnHelp = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvDSDichVu = new System.Windows.Forms.DataGridView();
+            this.madichvu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tendichvu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.thanhtien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn = new System.Windows.Forms.DataGridViewButtonColumn();
             this.label7 = new System.Windows.Forms.Label();
             this.grHD = new System.Windows.Forms.GroupBox();
             this.dtpNgayLap = new System.Windows.Forms.DateTimePicker();
@@ -82,11 +88,11 @@ namespace QuanLyChungCu.View
             this.groupBox1.Controls.Add(this.dgvDSDichVu);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.groupBox1.Location = new System.Drawing.Point(39, 493);
+            this.groupBox1.Location = new System.Drawing.Point(39, 479);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(1298, 204);
+            this.groupBox1.Size = new System.Drawing.Size(1298, 218);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh Sách Dịch Vụ";
@@ -99,8 +105,15 @@ namespace QuanLyChungCu.View
             this.dgvDSDichVu.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvDSDichVu.BackgroundColor = System.Drawing.Color.White;
             this.dgvDSDichVu.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dgvDSDichVu.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SunkenVertical;
+            this.dgvDSDichVu.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
             this.dgvDSDichVu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDSDichVu.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.madichvu,
+            this.tendichvu,
+            this.soluong,
+            this.gia,
+            this.thanhtien,
+            this.btn});
             this.dgvDSDichVu.EnableHeadersVisualStyles = false;
             this.dgvDSDichVu.Location = new System.Drawing.Point(13, 25);
             this.dgvDSDichVu.Margin = new System.Windows.Forms.Padding(4);
@@ -108,10 +121,63 @@ namespace QuanLyChungCu.View
             this.dgvDSDichVu.ReadOnly = true;
             this.dgvDSDichVu.RowHeadersWidth = 51;
             this.dgvDSDichVu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDSDichVu.Size = new System.Drawing.Size(1264, 171);
+            this.dgvDSDichVu.Size = new System.Drawing.Size(1277, 185);
             this.dgvDSDichVu.TabIndex = 10;
             this.dgvDSDichVu.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSDichVu_CellClick);
             this.dgvDSDichVu.RowStateChanged += new System.Windows.Forms.DataGridViewRowStateChangedEventHandler(this.dgvDSDichVu_RowStateChanged);
+            // 
+            // madichvu
+            // 
+            this.madichvu.DataPropertyName = "madichvu";
+            this.madichvu.HeaderText = "Mã dịch vụ";
+            this.madichvu.MinimumWidth = 6;
+            this.madichvu.Name = "madichvu";
+            this.madichvu.ReadOnly = true;
+            // 
+            // tendichvu
+            // 
+            this.tendichvu.DataPropertyName = "tendichvu";
+            this.tendichvu.HeaderText = "Tên dịch vụ";
+            this.tendichvu.MinimumWidth = 6;
+            this.tendichvu.Name = "tendichvu";
+            this.tendichvu.ReadOnly = true;
+            // 
+            // soluong
+            // 
+            this.soluong.DataPropertyName = "soluong";
+            this.soluong.HeaderText = "Số lượng";
+            this.soluong.MinimumWidth = 6;
+            this.soluong.Name = "soluong";
+            this.soluong.ReadOnly = true;
+            // 
+            // gia
+            // 
+            this.gia.DataPropertyName = "gia";
+            this.gia.HeaderText = "Đơn giá";
+            this.gia.MinimumWidth = 6;
+            this.gia.Name = "gia";
+            this.gia.ReadOnly = true;
+            // 
+            // thanhtien
+            // 
+            this.thanhtien.DataPropertyName = "thanhtien";
+            this.thanhtien.HeaderText = "Thành tiền";
+            this.thanhtien.MinimumWidth = 6;
+            this.thanhtien.Name = "thanhtien";
+            this.thanhtien.ReadOnly = true;
+            // 
+            // btn
+            // 
+            this.btn.DataPropertyName = "btn";
+            this.btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn.HeaderText = "          Xóa";
+            this.btn.MinimumWidth = 6;
+            this.btn.Name = "btn";
+            this.btn.ReadOnly = true;
+            this.btn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.btn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.btn.Text = "X";
+            this.btn.UseColumnTextForButtonValue = true;
             // 
             // label7
             // 
@@ -512,5 +578,11 @@ namespace QuanLyChungCu.View
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lbCheck;
         private System.Windows.Forms.Label lbTT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn madichvu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tendichvu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn soluong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn thanhtien;
+        private System.Windows.Forms.DataGridViewButtonColumn btn;
     }
 }

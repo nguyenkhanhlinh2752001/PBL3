@@ -33,6 +33,7 @@ namespace QuanLyChungCu.View
             this.dtpNgayLap = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
             this.gbThongTin = new System.Windows.Forms.GroupBox();
+            this.txtTenCH = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtLCH = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -61,7 +62,10 @@ namespace QuanLyChungCu.View
             this.rdRoi = new System.Windows.Forms.RadioButton();
             this.rdChua = new System.Windows.Forms.RadioButton();
             this.btnLuu = new System.Windows.Forms.Button();
-            this.txtTenCH = new System.Windows.Forms.TextBox();
+            this.tendichvu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.thanhtien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbThongTin.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSTDichVu)).BeginInit();
@@ -71,7 +75,7 @@ namespace QuanLyChungCu.View
             // btnHelp
             // 
             this.btnHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHelp.Location = new System.Drawing.Point(1052, 34);
+            this.btnHelp.Location = new System.Drawing.Point(1169, 20);
             this.btnHelp.Margin = new System.Windows.Forms.Padding(4);
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.Size = new System.Drawing.Size(100, 38);
@@ -85,7 +89,7 @@ namespace QuanLyChungCu.View
             this.dtpNgayLap.Enabled = false;
             this.dtpNgayLap.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpNgayLap.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpNgayLap.Location = new System.Drawing.Point(787, 103);
+            this.dtpNgayLap.Location = new System.Drawing.Point(860, 103);
             this.dtpNgayLap.Margin = new System.Windows.Forms.Padding(4);
             this.dtpNgayLap.Name = "dtpNgayLap";
             this.dtpNgayLap.Size = new System.Drawing.Size(313, 34);
@@ -122,15 +126,27 @@ namespace QuanLyChungCu.View
             this.gbThongTin.Margin = new System.Windows.Forms.Padding(4);
             this.gbThongTin.Name = "gbThongTin";
             this.gbThongTin.Padding = new System.Windows.Forms.Padding(4);
-            this.gbThongTin.Size = new System.Drawing.Size(1075, 170);
+            this.gbThongTin.Size = new System.Drawing.Size(1141, 170);
             this.gbThongTin.TabIndex = 30;
             this.gbThongTin.TabStop = false;
             this.gbThongTin.Text = "Thông tin căn hộ";
             // 
+            // txtTenCH
+            // 
+            this.txtTenCH.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtTenCH.Enabled = false;
+            this.txtTenCH.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenCH.ForeColor = System.Drawing.Color.Black;
+            this.txtTenCH.Location = new System.Drawing.Point(783, 43);
+            this.txtTenCH.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTenCH.Name = "txtTenCH";
+            this.txtTenCH.Size = new System.Drawing.Size(311, 34);
+            this.txtTenCH.TabIndex = 7;
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(516, 101);
+            this.label8.Location = new System.Drawing.Point(590, 101);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(147, 29);
@@ -143,7 +159,7 @@ namespace QuanLyChungCu.View
             this.txtLCH.Enabled = false;
             this.txtLCH.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLCH.ForeColor = System.Drawing.Color.Black;
-            this.txtLCH.Location = new System.Drawing.Point(709, 101);
+            this.txtLCH.Location = new System.Drawing.Point(783, 101);
             this.txtLCH.Margin = new System.Windows.Forms.Padding(4);
             this.txtLCH.Name = "txtLCH";
             this.txtLCH.Size = new System.Drawing.Size(311, 34);
@@ -174,7 +190,7 @@ namespace QuanLyChungCu.View
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(516, 42);
+            this.label7.Location = new System.Drawing.Point(590, 42);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(143, 29);
@@ -212,7 +228,7 @@ namespace QuanLyChungCu.View
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Size = new System.Drawing.Size(768, 248);
+            this.groupBox3.Size = new System.Drawing.Size(798, 248);
             this.groupBox3.TabIndex = 29;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Danh sách dịch vụ đã sử dụng";
@@ -221,17 +237,21 @@ namespace QuanLyChungCu.View
             // 
             this.dgvDSTDichVu.AllowUserToAddRows = false;
             this.dgvDSTDichVu.AllowUserToDeleteRows = false;
-            this.dgvDSTDichVu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDSTDichVu.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvDSTDichVu.BackgroundColor = System.Drawing.Color.White;
-            this.dgvDSTDichVu.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SunkenVertical;
+            this.dgvDSTDichVu.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
             this.dgvDSTDichVu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDSTDichVu.Location = new System.Drawing.Point(23, 31);
+            this.dgvDSTDichVu.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.tendichvu,
+            this.gia,
+            this.soluong,
+            this.thanhtien});
+            this.dgvDSTDichVu.Location = new System.Drawing.Point(14, 31);
             this.dgvDSTDichVu.Margin = new System.Windows.Forms.Padding(4);
             this.dgvDSTDichVu.Name = "dgvDSTDichVu";
             this.dgvDSTDichVu.ReadOnly = true;
             this.dgvDSTDichVu.RowHeadersWidth = 51;
-            this.dgvDSTDichVu.Size = new System.Drawing.Size(730, 209);
+            this.dgvDSTDichVu.Size = new System.Drawing.Size(766, 209);
             this.dgvDSTDichVu.TabIndex = 0;
             // 
             // groupBox2
@@ -252,7 +272,7 @@ namespace QuanLyChungCu.View
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(1075, 155);
+            this.groupBox2.Size = new System.Drawing.Size(1141, 155);
             this.groupBox2.TabIndex = 28;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin nhân viên";
@@ -263,7 +283,7 @@ namespace QuanLyChungCu.View
             this.rdbNam.BackColor = System.Drawing.Color.Transparent;
             this.rdbNam.Enabled = false;
             this.rdbNam.ForeColor = System.Drawing.Color.Indigo;
-            this.rdbNam.Location = new System.Drawing.Point(710, 88);
+            this.rdbNam.Location = new System.Drawing.Point(784, 88);
             this.rdbNam.Margin = new System.Windows.Forms.Padding(4);
             this.rdbNam.Name = "rdbNam";
             this.rdbNam.Size = new System.Drawing.Size(88, 33);
@@ -278,7 +298,7 @@ namespace QuanLyChungCu.View
             this.rdbNu.BackColor = System.Drawing.Color.Transparent;
             this.rdbNu.Enabled = false;
             this.rdbNu.ForeColor = System.Drawing.Color.Indigo;
-            this.rdbNu.Location = new System.Drawing.Point(865, 88);
+            this.rdbNu.Location = new System.Drawing.Point(939, 88);
             this.rdbNu.Margin = new System.Windows.Forms.Padding(4);
             this.rdbNu.Name = "rdbNu";
             this.rdbNu.Size = new System.Drawing.Size(67, 33);
@@ -290,7 +310,7 @@ namespace QuanLyChungCu.View
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(515, 88);
+            this.label10.Location = new System.Drawing.Point(589, 88);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(110, 29);
@@ -300,7 +320,7 @@ namespace QuanLyChungCu.View
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(515, 41);
+            this.label6.Location = new System.Drawing.Point(589, 41);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(167, 29);
@@ -313,7 +333,7 @@ namespace QuanLyChungCu.View
             this.txtSDTNV.Enabled = false;
             this.txtSDTNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSDTNV.ForeColor = System.Drawing.Color.Black;
-            this.txtSDTNV.Location = new System.Drawing.Point(709, 36);
+            this.txtSDTNV.Location = new System.Drawing.Point(783, 36);
             this.txtSDTNV.Margin = new System.Windows.Forms.Padding(4);
             this.txtSDTNV.Name = "txtSDTNV";
             this.txtSDTNV.Size = new System.Drawing.Size(311, 34);
@@ -380,7 +400,7 @@ namespace QuanLyChungCu.View
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Indigo;
-            this.label2.Location = new System.Drawing.Point(594, 106);
+            this.label2.Location = new System.Drawing.Point(667, 106);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(116, 29);
@@ -404,7 +424,7 @@ namespace QuanLyChungCu.View
             this.lblTongTien.AutoSize = true;
             this.lblTongTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTongTien.ForeColor = System.Drawing.Color.Indigo;
-            this.lblTongTien.Location = new System.Drawing.Point(864, 549);
+            this.lblTongTien.Location = new System.Drawing.Point(900, 549);
             this.lblTongTien.Name = "lblTongTien";
             this.lblTongTien.Size = new System.Drawing.Size(134, 29);
             this.lblTongTien.TabIndex = 34;
@@ -415,7 +435,7 @@ namespace QuanLyChungCu.View
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Indigo;
-            this.label13.Location = new System.Drawing.Point(864, 617);
+            this.label13.Location = new System.Drawing.Point(900, 617);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(153, 29);
             this.label13.TabIndex = 35;
@@ -425,7 +445,7 @@ namespace QuanLyChungCu.View
             // 
             this.txtTien.Enabled = false;
             this.txtTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTien.Location = new System.Drawing.Point(1052, 549);
+            this.txtTien.Location = new System.Drawing.Point(1088, 549);
             this.txtTien.Name = "txtTien";
             this.txtTien.Size = new System.Drawing.Size(161, 34);
             this.txtTien.TabIndex = 36;
@@ -436,7 +456,7 @@ namespace QuanLyChungCu.View
             this.rdRoi.BackColor = System.Drawing.Color.Transparent;
             this.rdRoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdRoi.ForeColor = System.Drawing.Color.Indigo;
-            this.rdRoi.Location = new System.Drawing.Point(1052, 613);
+            this.rdRoi.Location = new System.Drawing.Point(1088, 613);
             this.rdRoi.Margin = new System.Windows.Forms.Padding(4);
             this.rdRoi.Name = "rdRoi";
             this.rdRoi.Size = new System.Drawing.Size(74, 33);
@@ -451,7 +471,7 @@ namespace QuanLyChungCu.View
             this.rdChua.BackColor = System.Drawing.Color.Transparent;
             this.rdChua.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdChua.ForeColor = System.Drawing.Color.Indigo;
-            this.rdChua.Location = new System.Drawing.Point(1149, 613);
+            this.rdChua.Location = new System.Drawing.Point(1185, 613);
             this.rdChua.Margin = new System.Windows.Forms.Padding(4);
             this.rdChua.Name = "rdChua";
             this.rdChua.Size = new System.Drawing.Size(94, 33);
@@ -475,17 +495,41 @@ namespace QuanLyChungCu.View
             this.btnLuu.UseVisualStyleBackColor = true;
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
-            // txtTenCH
+            // tendichvu
             // 
-            this.txtTenCH.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtTenCH.Enabled = false;
-            this.txtTenCH.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenCH.ForeColor = System.Drawing.Color.Black;
-            this.txtTenCH.Location = new System.Drawing.Point(709, 43);
-            this.txtTenCH.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTenCH.Name = "txtTenCH";
-            this.txtTenCH.Size = new System.Drawing.Size(311, 34);
-            this.txtTenCH.TabIndex = 7;
+            this.tendichvu.DataPropertyName = "tendichvu";
+            this.tendichvu.HeaderText = "Dịch Vụ";
+            this.tendichvu.MinimumWidth = 6;
+            this.tendichvu.Name = "tendichvu";
+            this.tendichvu.ReadOnly = true;
+            this.tendichvu.Width = 150;
+            // 
+            // gia
+            // 
+            this.gia.DataPropertyName = "gia";
+            this.gia.HeaderText = "Đơn Giá";
+            this.gia.MinimumWidth = 6;
+            this.gia.Name = "gia";
+            this.gia.ReadOnly = true;
+            this.gia.Width = 120;
+            // 
+            // soluong
+            // 
+            this.soluong.DataPropertyName = "soluong";
+            this.soluong.HeaderText = "Số lượng";
+            this.soluong.MinimumWidth = 6;
+            this.soluong.Name = "soluong";
+            this.soluong.ReadOnly = true;
+            this.soluong.Width = 120;
+            // 
+            // thanhtien
+            // 
+            this.thanhtien.DataPropertyName = "thanhtien";
+            this.thanhtien.HeaderText = "Thành Tiền";
+            this.thanhtien.MinimumWidth = 6;
+            this.thanhtien.Name = "thanhtien";
+            this.thanhtien.ReadOnly = true;
+            this.thanhtien.Width = 180;
             // 
             // Form_ChiTietHoaDonDV
             // 
@@ -494,7 +538,7 @@ namespace QuanLyChungCu.View
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::QuanLyChungCu.Properties.Resources.depositphotos_29522159_stock_photo_abstract_pastel_pink_and_white1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1256, 815);
+            this.ClientSize = new System.Drawing.Size(1308, 815);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.rdRoi);
             this.Controls.Add(this.lblTongTien);
@@ -561,5 +605,9 @@ namespace QuanLyChungCu.View
         private System.Windows.Forms.RadioButton rdChua;
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.TextBox txtTenCH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tendichvu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn soluong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn thanhtien;
     }
 }

@@ -60,6 +60,12 @@ namespace QuanLyChungCu.View
             this.button1 = new System.Windows.Forms.Button();
             this.btnTatCa = new System.Windows.Forms.Button();
             this.btnThemHDDV = new System.Windows.Forms.Button();
+            this.mahoadon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.macanho = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tennhanvien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tongtien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngaylap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dathanhtoan = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDonDV)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -105,7 +111,6 @@ namespace QuanLyChungCu.View
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.dgvHoaDonDV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvHoaDonDV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvHoaDonDV.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvHoaDonDV.BackgroundColor = System.Drawing.Color.White;
             this.dgvHoaDonDV.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -119,6 +124,13 @@ namespace QuanLyChungCu.View
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvHoaDonDV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvHoaDonDV.ColumnHeadersHeight = 50;
+            this.dgvHoaDonDV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.mahoadon,
+            this.macanho,
+            this.tennhanvien,
+            this.tongtien,
+            this.ngaylap,
+            this.dathanhtoan});
             this.dgvHoaDonDV.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dgvHoaDonDV.Location = new System.Drawing.Point(16, 30);
             this.dgvHoaDonDV.Name = "dgvHoaDonDV";
@@ -443,6 +455,56 @@ namespace QuanLyChungCu.View
             this.btnThemHDDV.UseVisualStyleBackColor = true;
             this.btnThemHDDV.Click += new System.EventHandler(this.btnThemHDDV_Click);
             // 
+            // mahoadon
+            // 
+            this.mahoadon.DataPropertyName = "mahoadon";
+            this.mahoadon.HeaderText = "Mã hóa đơn";
+            this.mahoadon.MinimumWidth = 6;
+            this.mahoadon.Name = "mahoadon";
+            this.mahoadon.Width = 150;
+            // 
+            // macanho
+            // 
+            this.macanho.DataPropertyName = "macanho";
+            this.macanho.HeaderText = "Mã căn hộ";
+            this.macanho.MinimumWidth = 6;
+            this.macanho.Name = "macanho";
+            this.macanho.Width = 150;
+            // 
+            // tennhanvien
+            // 
+            this.tennhanvien.DataPropertyName = "tennhanvien";
+            this.tennhanvien.HeaderText = "Nhân viên";
+            this.tennhanvien.MinimumWidth = 6;
+            this.tennhanvien.Name = "tennhanvien";
+            this.tennhanvien.Width = 220;
+            // 
+            // tongtien
+            // 
+            this.tongtien.DataPropertyName = "tongtien";
+            this.tongtien.HeaderText = "Tổng tiền";
+            this.tongtien.MinimumWidth = 6;
+            this.tongtien.Name = "tongtien";
+            this.tongtien.Width = 140;
+            // 
+            // ngaylap
+            // 
+            this.ngaylap.DataPropertyName = "ngaylap";
+            this.ngaylap.HeaderText = "Ngày lập";
+            this.ngaylap.MinimumWidth = 6;
+            this.ngaylap.Name = "ngaylap";
+            this.ngaylap.Width = 140;
+            // 
+            // dathanhtoan
+            // 
+            this.dathanhtoan.DataPropertyName = "dathanhtoan";
+            this.dathanhtoan.HeaderText = "Đã thanh toán";
+            this.dathanhtoan.MinimumWidth = 6;
+            this.dathanhtoan.Name = "dathanhtoan";
+            this.dathanhtoan.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dathanhtoan.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dathanhtoan.Width = 150;
+            // 
             // Form_Dichvu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -504,5 +566,11 @@ namespace QuanLyChungCu.View
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnTatCa;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mahoadon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn macanho;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tennhanvien;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tongtien;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ngaylap;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn dathanhtoan;
     }
 }

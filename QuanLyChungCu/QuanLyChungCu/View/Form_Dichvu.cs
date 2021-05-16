@@ -255,5 +255,7 @@ namespace QuanLyChungCu.View
                 KeyPressOnlyNumber(sender, e);
             }
         }
+
+        
     }
 }

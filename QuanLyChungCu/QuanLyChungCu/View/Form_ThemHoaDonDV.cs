@@ -28,7 +28,6 @@ namespace QuanLyChungCu.View
         public void HienThiDSDichVuDaChon()
         {
             dgvDSDichVu.DataSource = hd_bll.HienThiDSDichVuDaChon(maHD);
-            dgvDSDichVu.Columns["madichvu"].Visible = false;
             TongTien();
         }
         void ThemHD()
@@ -79,12 +78,6 @@ namespace QuanLyChungCu.View
             btnChonDV.Visible = true;
             btnThemDon.Visible = false;
             dgvDSDichVu.DataSource = hd_bll.HienThiDSDichVuDaChon(maHD);
-            DataGridViewButtonColumn btn = new DataGridViewButtonColumn();
-            dgvDSDichVu.Columns.Add(btn);
-            btn.HeaderText = "       Xóa";
-            btn.Text = "X";
-            btn.Name = "btn";
-            btn.UseColumnTextForButtonValue = true;
         }
 
         void XuatPDF()
@@ -193,16 +186,17 @@ namespace QuanLyChungCu.View
             }
             else
             {
-                ThemHD();
-                GUI();
+                ThemHD();              
                 txtMaCH.Enabled = false;
+                GUI();
             }
         }
 
         public void XoaDVKhoiHD()
         {
+            int index = dgvDSDichVu.CurrentCell.RowIndex;
             int mahd = Convert.ToInt32(txtMaHD.Text);
-            int madv = Convert.ToInt32(dgvDSDichVu.Rows[0].Cells["madichvu"].Value);
+            int madv = Convert.ToInt32(dgvDSDichVu.Rows[index].Cells["madichvu"].Value);
             hd_bll.XoaDichVuKhoiHD(mahd, madv);
             HienThiDSDichVuDaChon();
         }

@@ -309,7 +309,6 @@ namespace QuanLyChungCu.BLL
             return query.ToList();
 
         }
-
         public void ThemDichVuVaoHD(chitiethoadon cthd)
         {
             var query = db.chitiethoadons.Where(p => p.mahoadon == cthd.mahoadon && p.madichvu == cthd.madichvu).Count();
@@ -322,7 +321,6 @@ namespace QuanLyChungCu.BLL
             {
                 MessageBox.Show("Bạn đã chọn dịch vụ này!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
         }
 
         public void XoaDichVuKhoiHD(int mahd, int madv)

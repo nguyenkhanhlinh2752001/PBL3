@@ -36,6 +36,9 @@ namespace QuanLyChungCu.View
             this.btnChon = new System.Windows.Forms.Button();
             this.btnDel = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.madichvu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tendichvu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbDanhSach.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvQuanLyDV)).BeginInit();
             this.SuspendLayout();
@@ -61,8 +64,12 @@ namespace QuanLyChungCu.View
             this.dgvQuanLyDV.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvQuanLyDV.BackgroundColor = System.Drawing.Color.White;
             this.dgvQuanLyDV.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dgvQuanLyDV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SunkenVertical;
+            this.dgvQuanLyDV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
             this.dgvQuanLyDV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvQuanLyDV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.madichvu,
+            this.tendichvu,
+            this.gia});
             this.dgvQuanLyDV.Location = new System.Drawing.Point(8, 31);
             this.dgvQuanLyDV.Margin = new System.Windows.Forms.Padding(4);
             this.dgvQuanLyDV.Name = "dgvQuanLyDV";
@@ -77,10 +84,10 @@ namespace QuanLyChungCu.View
             this.label5.BackColor = System.Drawing.Color.White;
             this.label5.Font = new System.Drawing.Font("MS Reference Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Indigo;
-            this.label5.Location = new System.Drawing.Point(257, 24);
+            this.label5.Location = new System.Drawing.Point(230, 33);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(445, 71);
+            this.label5.Size = new System.Drawing.Size(493, 71);
             this.label5.TabIndex = 41;
             this.label5.Text = "QUẢN LÝ DỊCH VỤ";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -140,6 +147,27 @@ namespace QuanLyChungCu.View
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // madichvu
+            // 
+            this.madichvu.DataPropertyName = "madichvu";
+            this.madichvu.HeaderText = "Mã dịch vụ";
+            this.madichvu.MinimumWidth = 6;
+            this.madichvu.Name = "madichvu";
+            // 
+            // tendichvu
+            // 
+            this.tendichvu.DataPropertyName = "tendichvu";
+            this.tendichvu.HeaderText = "Tên dịch vụ";
+            this.tendichvu.MinimumWidth = 6;
+            this.tendichvu.Name = "tendichvu";
+            // 
+            // gia
+            // 
+            this.gia.DataPropertyName = "gia";
+            this.gia.HeaderText = "Đơn giá";
+            this.gia.MinimumWidth = 6;
+            this.gia.Name = "gia";
+            // 
             // Form_QuanLyDichVu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -169,5 +197,8 @@ namespace QuanLyChungCu.View
         private System.Windows.Forms.Button btnDel;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn madichvu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tendichvu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gia;
     }
 }
